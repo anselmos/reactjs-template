@@ -1,20 +1,43 @@
 # Created by https://www.toptal.com/developers/gitignore/api/react
 # Edit at https://www.toptal.com/developers/gitignore?templates=react
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 ### react ###
+# misc
+.DS_Store
 .DS_*
 *.log
 logs
-**/*.backup.*
-**/*.back.*
-
-node_modules
-bower_components
-
-*.sublime*
-
 psd
 thumb
 sketch
 
+# envs
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+**/*.backup.*
+**/*.back.*
+
+
+# testing
+/coverage
+
+# production
+/build
+
+*.sublime*
+
+# dependencies
+node_modules
+bower_components
+/node_modules
+/.pnp
+.pnp.js
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 # End of https://www.toptal.com/developers/gitignore/api/react
